@@ -57,7 +57,7 @@ const SideBar = ({ SelectedUser, SetSelectedUser }) => {
           </div>
         </div>
 
-        {/*===================    searchbar div   ================= */}
+        {/*===================   searchbar div   ================= */}
         <div className="flex justify-between items-center">
           <div className="relative flex-grow mr-4">
             <CiSearch
