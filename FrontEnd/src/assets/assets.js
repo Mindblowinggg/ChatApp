@@ -15,12 +15,14 @@ import menu_icon from './menu_icon.png'
 import arrow_icon from './arrow_icon.png'
 import code from './code.svg'
 import bgImage from './bgimg.svg'
+import ChatContainerBg from './chatcontainerbg.png'
 import pic1 from './pic1.png'
 import pic2 from './pic2.png'
 import pic3 from './pic3.png'
 import pic4 from './pic4.png'
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
+
 
 const assets = {
     avatar_icon,
@@ -29,13 +31,16 @@ const assets = {
     logo_big,
     logo_icon,
     logo,
+    ChatContainerBg,
+    img1,
     search_icon,
     send_button,
     menu_icon,
     arrow_icon,
     code,
     bgImage,
-    profile_martin
+    profile_martin,
+   
 }
 
 export default assets;
