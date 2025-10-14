@@ -1,9 +1,46 @@
-import React from 'react'
+import React from "react";
+import assets, { imagesDummyData } from "../assets/assets";
 
-const RightSideBar = () => {
+const RightSideBar = ({ SelectedUser }) => {
   return (
-    <div>RightSideBar</div>
-  )
-}
+    SelectedUser && (
+      <div
+        className={`w-full  border-l bg-white relative overflow-y-scroll ${
+          SelectedUser ? "max-md:hidden" : ""
+        }`}
+      >
+        <div className=" pt-5 flex flex-col items-center gap-2 text-xs font-light ">
+          <img
+            src={SelectedUser?.profilePic || assets.avatar_icon}
+            alt=""
+            className="w-20 rounded-full   "
+          />
+          <h1 className="px-10 text-xl  font-medium">
+            {" "}
+            {SelectedUser.fullName}
+          </h1>
+          <p className="px-10 ">{SelectedUser.bio}</p>
+        </div>
+
+        <hr className="border-black my-4" />
+        <div className="px-5 text-xs">
+          <p>Media</p>
+          <div className="mt-2 max-h-[200px] overflow-y-scroll grid grid-cols-2 gap-4 opacity-80">
+            {imagesDummyData.map((url, index) => (
+              <div
+                key={index}
+                onClick={() => window.open(url)}
+                className="cursor-pointer rounded"
+              >
+                <img src={url} alt="" className=" h-full rounded-md" />
+              </div>
+            ))}
+          </div>
+        </div>
+        <button className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-400 to-blue-600 text-white border-none text-sm font-light py-2 px-20 rounded-full cursor-pointer">Logout</button>
+      </div>
+    )
+  );
+};
 
 export default RightSideBar;

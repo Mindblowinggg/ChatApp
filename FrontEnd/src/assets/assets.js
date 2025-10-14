@@ -15,13 +15,12 @@ import menu_icon from './menu_icon.png'
 import arrow_icon from './arrow_icon.png'
 import code from './code.svg'
 import bgImage from './bgimg.svg'
-import ChatContainerBg from './chatcontainerbg.png'
+import ChatContainerBg from './chatcontainerbg.png' 
 import pic1 from './pic1.png'
 import pic2 from './pic2.png'
 import pic3 from './pic3.png'
 import pic4 from './pic4.png'
-import img1 from './img1.jpg'
-import img2 from './img2.jpg'
+// Image imports have been removed
 
 
 const assets = {
@@ -31,8 +30,7 @@ const assets = {
     logo_big,
     logo_icon,
     logo,
-    ChatContainerBg,
-    img1,
+    ChatContainerBg, 
     search_icon,
     send_button,
     menu_icon,
@@ -40,7 +38,6 @@ const assets = {
     code,
     bgImage,
     profile_martin,
-   
 }
 
 export default assets;
@@ -88,58 +85,82 @@ export const userDummyData = [
 export const messagesDummyData = [
     {
         "_id": "680f571ff10f3cd28382f094",
-        "senderId": "680f5116f10f3cd28382ed02",
-        "receiverId": "680f50e4f10f3cd28382ecf9",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "senderId": "680f5116f10f3cd28382ed02", // Neha (Friend 1)
+        "receiverId": "680f50e4f10f3cd28382ecf9", // Vijay (Friend 2 - Current User)
+        "text": "Hey Vijay! Long time no talk, how's everything been on your end? Are you busy this weekend? 🤔",
         "seen": true,
-        "createdAt": "2025-04-28T10:23:27.844Z",
+        "createdAt": "2025-10-14T15:00:00.000Z",
     },
     {
         "_id": "680f5726f10f3cd28382f0b1",
-        "senderId": "680f50e4f10f3cd28382ecf9",
-        "receiverId": "680f5116f10f3cd28382ed02",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "senderId": "680f50e4f10f3cd28382ecf9", // Vijay
+        "receiverId": "680f5116f10f3cd28382ed02", // Neha
+        "text": "Hey Neha! It's been good, just finished a huge project at work, so I'm totally free! I was actually planning a chill movie night and ordering a big pizza. You wanna join?",
         "seen": true,
-        "createdAt": "2025-04-28T10:23:34.520Z",
+        "createdAt": "2025-10-14T15:01:30.000Z",
     },
     {
         "_id": "680f5729f10f3cd28382f0b6",
-        "senderId": "680f5116f10f3cd28382ed02",
-        "receiverId": "680f50e4f10f3cd28382ecf9",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "senderId": "680f5116f10f3cd28382ed02", // Neha
+        "receiverId": "680f50e4f10f3cd28382ecf9", // Vijay
+        "text": "OMG, that sounds like a lifesaver! I desperately need a break. Pizza and movies sound perfect! What kind of movie were you thinking of? Horror, comedy, or something chill?",
         "seen": true,
-        "createdAt": "2025-04-28T10:23:37.301Z",
+        "createdAt": "2025-10-14T15:02:45.000Z",
     },
     {
         "_id": "680f572cf10f3cd28382f0bb",
-        "senderId": "680f50e4f10f3cd28382ecf9",
-        "receiverId": "680f5116f10f3cd28382ed02",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "senderId": "680f50e4f10f3cd28382ecf9", // Vijay
+        "receiverId": "680f5116f10f3cd28382ed02", // Neha
+        "text": "I was leaning towards that new sci-fi action movie everyone's talking about, but I'm flexible. Let's aim for 8 PM here. Bring your favorite snacks and let the weekend begin! 🍿🥤",
         "seen": true,
-        "createdAt": "2025-04-28T10:23:40.334Z",
+        "createdAt": "2025-10-14T15:03:55.000Z",
     },
     {
         "_id": "680f573cf10f3cd28382f0c0",
-        "senderId": "680f50e4f10f3cd28382ecf9",
-        "receiverId": "680f5116f10f3cd28382ed02",
-        "image": img1,
+        "senderId": "680f5116f10f3cd28382ed02", // Neha
+        "receiverId": "680f50e4f10f3cd28382ecf9", // Vijay
+        "text": "The sci-fi one? I heard it had some amazing visual effects, I'm totally in! Is it okay if I arrive a little early, maybe around 7:30? I need to run a quick errand beforehand.",
         "seen": true,
-        "createdAt": "2025-04-28T10:23:56.265Z",
+        "createdAt": "2025-10-14T15:05:10.000Z",
     },
     {
         "_id": "680f5745f10f3cd28382f0c5",
-        "senderId": "680f5116f10f3cd28382ed02",
-        "receiverId": "680f50e4f10f3cd28382ecf9",
-        "image": img2,
+        "senderId": "680f50e4f10f3cd28382ecf9", // Vijay
+        "receiverId": "680f5116f10f3cd28382ed02", // Neha
+        "text": "7:30 is perfect! Gives us time to catch up before the pizza arrives. Just text me when you leave your place so I know when to expect you. Looking forward to it!",
         "seen": true,
-        "createdAt": "2025-04-28T10:24:05.164Z",
+        "createdAt": "2025-10-14T15:06:20.000Z",
     },
     {
         "_id": "680f5748f10f3cd28382f0ca",
-        "senderId": "680f5116f10f3cd28382ed02",
-        "receiverId": "680f50e4f10f3cd28382ecf9",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "senderId": "680f5116f10f3cd28382ed02", // Neha
+        "receiverId": "680f50e4f10f3cd28382ecf9", // Vijay
+        "text": "Definitely! Thanks for inviting me, this is going to be fun. See ya on Saturday! 🎉",
         "seen": true,
-        "createdAt": "2025-04-28T10:24:08.523Z",
+        "createdAt": "2025-10-14T15:07:35.000Z",
+    },
+    {
+        "_id": "680f5748f10f3cd28382f0cb",
+        "senderId": "680f50e4f10f3cd28382ecf9", // Vijay
+        "receiverId": "680f5116f10f3cd28382ed02", // Neha
+        "text": "By the way, did you finish reading that book I lent you last month? We need to talk about that ending!",
+        "seen": true,
+        "createdAt": "2025-10-14T15:08:15.000Z",
+    },
+    {
+        "_id": "680f5748f10f3cd28382f0cc",
+        "senderId": "680f5116f10f3cd28382ed02", // Neha
+        "receiverId": "680f50e4f10f3cd28382ecf9", // Vijay
+        "text": "Oh man, almost! I'm on the final chapter. I'll make sure to finish it before Saturday. Don't spoil anything! 😉",
+        "seen": true,
+        "createdAt": "2025-10-14T15:09:00.000Z",
+    },
+    {
+        "_id": "680f5748f10f3cd28382f0cd",
+        "senderId": "680f50e4f10f3cd28382ecf9", // Vijay
+        "receiverId": "680f5116f10f3cd28382ed02", // Neha
+        "text": "Haha, wouldn't dream of it. See you then! 👋",
+        "seen": true,
+        "createdAt": "2025-10-14T15:09:30.000Z",
     }
 ]

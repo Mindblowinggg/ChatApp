@@ -13,11 +13,20 @@ const HomePage = () => {
           SelectedUser
             ? "md:grid-cols-[1fr_1.5fr_1fr] xl:grid-cols-[1fr_2fr_1fr]"
             : "md:grid-cols-[1fr_2fr]"
-        }  `}
+        } `}
       >
-        <SideBar SelectedUser={SelectedUser} SetSelectedUser={SetSelectedUser}/>
-        <ChatContainer SelectedUser={SelectedUser} SetSelectedUser={SetSelectedUser} />
-        <RightSideBar SelectedUser={SelectedUser} SetSelectedUser={SetSelectedUser} />
+        <SideBar
+          SelectedUser={SelectedUser}
+          SetSelectedUser={SetSelectedUser}
+        />
+        <ChatContainer
+          SelectedUser={SelectedUser}
+          SetSelectedUser={SetSelectedUser}
+        />
+        <RightSideBar
+          SelectedUser={SelectedUser}
+          SetSelectedUser={SetSelectedUser}
+        />
       </div>
     </div>
   );
